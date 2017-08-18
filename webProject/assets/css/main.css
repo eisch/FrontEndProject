@@ -3,3 +3,37 @@
     height: 100%;
     position:absolute;
 }
+body
+{
+    margin: 0px;
+}
+nav{
+    overflow: hidden;
+    background-color: lightblue;
+  
+}
+nav ul{
+    list-style-type:  none;
+    background-color: lightblue;
+    padding: 0px;
+
+}
+nav li{
+   display: inline;
+
+}
+nav a{
+text-decoration: none;
+color: darkblue;
+font-size: 20px;
+padding: 15px 15px;
+text-align: center;
+}
+nav a:hover{
+    background-color: blue;
+    color: white;
+}
+nav a:active{
+    background-color: red;
+    color: black;
+}
