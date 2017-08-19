@@ -1,3 +1,7 @@
+body{
+    background: #81B9E7;
+
+}
 .slide{
     width: 100%;
     height: 100%;
@@ -8,18 +12,21 @@
     display: inline;
     text-align: right;
 }
+
 a{
     text-decoration: none;
     padding: 15px;
-    margin: 10px;
-    border: 5px solid gray;
+    margin: -4px;
 }
 a:link{
-    background: lightgray;
+    background: #81B9E7;
     color:black;
 }
 a:hover{
-    background: black;
-    color:white;
+    background: #E3F1FD;
+    color:black;
 }
 
+nav{
+    margin-left: 950px;
+}
