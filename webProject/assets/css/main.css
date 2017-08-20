@@ -46,3 +46,13 @@ footer a:link{
     padding:0;
     margin: auto;
 }
+footer address, .addr p{
+    line-height: 0.7;
+}
+.rights{
+    background-color: #E3F1FD; 
+    overflow: hidden;
+    display: block;
+    margin-top:150px;
+    text-align: center;
+}
