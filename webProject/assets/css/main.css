@@ -30,3 +30,19 @@ a:hover{
 nav{
     margin-left: 950px;
 }
+footer{
+    background-color: white;
+    overflow: hidden;
+   
+}
+.addr{
+    float: left;
+}
+.socialIcons{
+    float: right;
+}
+footer a:link{
+    background-color: white;
+    padding:0;
+    margin: auto;
+}
