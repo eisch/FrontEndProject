@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -9,19 +9,22 @@
     <meta name="author" content="Elena Nikolova, Elitsa Shishkova">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    
-    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
 </head>
+
 <body>
-      <nav>
-        <ul>
-            <li class='menu'><a href="" >Home</a></li>
-            <li class='menu'><a href="">About us</a></li>
-            <li class='menu'><a href="">Rooms</a></li>
-            <li class='menu'><a href="">Contact</a></li>
-        </ul>
-    </nav>
     <header>
+        <nav>
+            <ul>
+                <li class='menu'><a href="">Home</a></li>
+                <li class='menu'><a href="">About us</a></li>
+                <li class='menu'><a href="">Rooms</a></li>
+                <li class='menu'><a href="">Contact</a></li>
+            </ul>
+
+        </nav>
+
         <div class='slideshow'>
             <img src="assets/images/img1.jpg" alt="hotel view" class='slide'>
             <img src="assets/images/img2.jpg" alt="hotel view" class='slide'>
@@ -30,26 +33,53 @@
         </div>
     </header>
     <script src="assets/script/slideshow.js"></script>
-    <section></section>
+    <aside>
+        <form action='' method="post">
+            <fieldset>
+                <legend>Reservation form</legend>
+                <label for="city">City</label>
+                <input type="text" placeholder="City" name='city'>
+                <label for="check-in">Check in</label>
+                <input type="date" name="check-in" id="check-in">
+                <label for="check-out">Check out</label>
+                <input type="date" name="check-out" id="check-out">
+                </br>
+                <label for='rooms'>Rooms:</label>
+              <input type="number" min='1'>
+                <label for="adults">Adults:</label>
+              <input type="number" min='1'>
+                <label for="child">Child:</label>
+                  <input type="number" min='0' max='4'>
+
+            </fieldset>
+        </form>
+    </aside>
+    <main>
+
+    </main>
     <footer>
         <div class="addr">
             <p>Wanna come to our office?
-            <address>
-                <span class="addressIcons"><img src="assets/icons/home.png"></span>Balkan Str 28<br>
-                <span class="addressIcons"><img src="assets/icons/call-answer.png"></span>+359 648456686 <br>
-                <span class="addresIcons"><img src="assets/icons/placeholder.png"></span>Sofia, Bulgaria <br>
-                <span class="addresIcons"><img src="assets/icons/mail.png"></span><a href="mailto:example@gmail.com">example@gmail.com</a><br>
-             </address>
+                <address>
+                    <span class="addressIcons"><img src="assets/icons/home.png"></span>Balkan Str 28<br>
+                    <span class="addressIcons"><img src="assets/icons/call-answer.png"></span>+359 648456686 <br>
+                    <span class="addresIcons"><img src="assets/icons/placeholder.png"></span>Sofia, Bulgaria <br>
+                    <span class="addresIcons"><img src="assets/icons/mail.png"></span><a href="mailto:example@gmail.com">example@gmail.com</a><br>
+                </address>
         </div>
+
         <div class="socialIcons">
-        <p>Follow us on social networks:</p>
+            <p>Follow us on social networks:</p>
             <span class="sIc"><img src="assets/icons/facebook-logo.png"></span>
             <span class="sIc"><img src="assets/icons/skype.png"></span>
             <span class="sIc"><img src="assets/icons/social-google-plus-square-button.png"></span>
             <span class="sIc"><img src="assets/icons/instagram-social-network-logo-of-photo-camera.png"></span>
             <span class="sIc"><img src="assets/icons/twitter-logo-silhouette.png"></span>
         </div>
-        <div class="rights"> <h3>All rights reserved &reg; Nameofthesite 2017 </h3> </div>
+        <div class="rights">
+            <h3>All rights reserved &reg; Nameofthesite 2017 </h3>
+        </div>
     </footer>
 </body>
+
 </html>
