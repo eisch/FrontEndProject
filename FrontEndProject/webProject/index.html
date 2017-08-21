@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="hotel, booking, relax, holiday, vacation, family">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Elena Nikolova, Elitsa Shishkova">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class='menu'><a href="">Home</a></li>
+                <li class='menu'><a href="">About us</a></li>
+                <li class='menu'><a href="">Rooms</a></li>
+                <li class='menu'><a href="">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div class='slideshow'>
+            <img src="assets/images/img1.jpg" alt="hotel view" class='slide'>
+            <img src="assets/images/img2.jpg" alt="hotel view" class='slide'>
+            <img src="assets/images/img3.jpg" alt="hotel view" class='slide'>
+            <img src="assets/images/img4.jpg" alt="hotel view" class='slide'>
+        </div>
+    </header>
+    <script src="assets/script/slideshow.js"></script>
+    <aside>
+        <form action='' method="post">
+            <fieldset>
+                <legend>Reservation form</legend>
+                <label for="city">City</label>
+                <input type="text" placeholder="City" name='city'>
+                <label for="check-in">Check in</label>
+                <input type="date" name="check-in" id="check-in">
+                <label for="check-out">Check out</label>
+                <input type="date" name="check-out" id="check-out">
+                </br>
+                <label for='rooms'>Rooms:</label>
+              <input type="number" min='1'>
+                <label for="adults">Adults:</label>
+              <input type="number" min='1'>
+                <label for="child">Child:</label>
+                  <input type="number" min='0' max='4'>
+
+            </fieldset>
+        </form>
+    </aside>
+    <main>
+
+    </main>
+    <footer>
+        <div class="socialIcons">
+            <p>Follow us on social networks:</p>
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-skype"></i>
+            <i class="fa fa-google-plus"></i>
+        </div>
+    
+        <div class="subscribe">
+            <p>Subscribe us to learn our new offers!</p>
+            <input type="email" name="subscribeEmail" placeholder="Your email">
+            <input type="submit" value="Send">
+        </div>
+        <div class="rights">
+                <p>All rights reserved &reg; Nameofthesite 2017 </p>
+            </div>
+    </footer>
+</body>
+
+</html>
