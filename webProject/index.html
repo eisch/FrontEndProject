@@ -10,7 +10,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -44,7 +43,7 @@
                 <input type="date" name="check-in" id="check-in">
                 <label for="check-out">Check out</label>
                 <input type="date" name="check-out" id="check-out">
-                </br>
+                <br>
                 <label for='rooms'>Rooms:</label>
               <input type="number" min='1'>
                 <label for="adults">Adults:</label>
@@ -58,6 +57,30 @@
     <main>
 
     </main>
+    <section id="info">
+        <p>Please fill out this short form and we will be happy to respond to your requests for information or suggestions.</p>
+        <div class="contact">
+        <form action="" method="post">
+            <fieldset >
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name*" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email*" name="email" required>
+                <label for="message">Message</label>
+                <textarea name="message" rows="5" cols="100" placeholder="Enter your message here" required></textarea>
+                <input type="submit" value="Submit">
+            </fieldset>    
+        </form>
+        </div>
+        <div class="address">
+            <p>You can find us here!</p>
+            <address>
+                 <i class="fa fa-home"></i>Balkan Str 28<br>
+                 <i class="fa fa-map-marker"></i>Sofia, Bulgaria<br>
+                 <i class="fa fa-phone-square"></i>+359 864 15 4549<br>
+            </address>
+        </div>
+    </section>
     <footer>
         <div class="socialIcons">
             <p>Follow us on social networks:</p>
@@ -70,8 +93,8 @@
     
         <div class="subscribe">
             <p>Subscribe us to learn our new offers!</p>
-            <input type="email" name="subscribeEmail" placeholder="Your email">
-            <input type="submit" value="Send">
+            <input type="email" name="subscribeEmail" placeholder="Your email" required>
+            <input type="submit" value="Submit">
         </div>
         <div class="rights">
                 <p>All rights reserved &reg; Nameofthesite 2017 </p>

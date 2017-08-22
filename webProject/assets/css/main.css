@@ -120,3 +120,35 @@ input[type=submit]{
     border-radius: 5px;
     padding: 5px;
 }
+textarea[name=message]{
+    resize: none;
+}
+#info
+{
+    background-color: lightblue;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+.contact
+{
+    display: inline-block;
+}
+.address{
+    float: right;
+    display: inline-block;
+   
+}
+label[for=email]
+{
+display: inline;
+}
+.fa.fa-home, .fa.fa-map-marker, .fa.fa-phone-square{
+    font-size:30px;
+    color: white;
+}
+.fa.fa-home:hover, .fa.fa.fa-map-marker:hover, .fa.fa.fa-phone-square:hover, .fa.fa-skype:hover,.fa.fa-google-plus:hover{
+    cursor: pointer;
+    color: black;
+}
