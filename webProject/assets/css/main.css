@@ -204,3 +204,23 @@ display: inline;
     cursor: pointer;
     color: black;
 }
+#aboutUs{
+    overflow: hidden;
+    padding:10px;
+    border: 10px;
+    border-top-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+}
+
+.text{
+    float: left;
+    width: 50%;
+}
+#aui{
+    margin-top: 70px;
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
