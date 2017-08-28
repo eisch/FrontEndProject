@@ -165,12 +165,16 @@ footer p{
     margin-top: 90px;
 }
 input[type=submit]{
-    background-color: white;
-    color:#0055BD;
+    background-color: #0055BD;
+    color:white;
     border: none;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 5px;
+}
+input[type=submit]:hover
+{
+background-color: #6D9ED9;
 }
 textarea[name=message]{
     resize: none;
@@ -198,12 +202,9 @@ display: inline;
 }
 .fa.fa-home, .fa.fa-map-marker, .fa.fa-phone-square{
     font-size:30px;
-    color: white;
+    color: #0055BD;
 }
-.fa.fa-home:hover, .fa.fa.fa-map-marker:hover, .fa.fa.fa-phone-square:hover, .fa.fa-skype:hover,.fa.fa-google-plus:hover{
-    cursor: pointer;
-    color: black;
-}
+
 #aboutUs{
     overflow: hidden;
     padding:10px;
