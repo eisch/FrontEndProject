@@ -7,14 +7,20 @@
     <meta name="keywords" content="hotel, booking, relax, holiday, vacation, family">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Elena Nikolova, Elitsa Shishkova">
-    <title>Document</title>
+    <title>Hotelio</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/images/logo.png">
 </head>
 
 <body>
+    <div id='wrapper'>
     <header>
+        <div id='menu'>
+        <div id='logo'>
+            <img src="assets/images/logo1png.png" alt="logo">
+        </div>
         <nav>
             <ul>
                 <li class='menu'><a href="">Home</a></li>
@@ -24,7 +30,7 @@
             </ul>
 
         </nav>
-
+        </div>
         <div class='slideshow'>
             <img src="assets/images/img1.jpg" alt="hotel view" class='slide'>
             <img src="assets/images/img2.jpg" alt="hotel view" class='slide'>
@@ -34,22 +40,30 @@
     </header>
     <script src="assets/script/slideshow.js"></script>
     <aside>
-        <form action='' method="post">
+        <form action='' method="post" id='reservation'>
             <fieldset>
                 <legend>Reservation form</legend>
-                <label for="city">City</label>
-                <input type="text" placeholder="City" name='city'>
-                <label for="check-in">Check in</label>
-                <input type="date" name="check-in" id="check-in">
+                <label for="city" >City</label>
+                <input type="text" placeholder="City" name='city' required>
+                <label for="check-in" >Check in</label>
+                <input type="date" name="check-in" id="check-in" required>
                 <label for="check-out">Check out</label>
-                <input type="date" name="check-out" id="check-out">
+                <input type="date" name="check-out" id="check-out" required>
                 <br>
+                <div>
                 <label for='rooms'>Rooms:</label>
-              <input type="number" min='1'>
+              <input type="number" min='1' required>
+              </div>
+              <div>
                 <label for="adults">Adults:</label>
-              <input type="number" min='1'>
+              <input type="number" min='1' required>
+              </div>
+              <div>
                 <label for="child">Child:</label>
                   <input type="number" min='0' max='4'>
+                  </div>
+                 
+                  <div id='reserve'>Reserve</div>
 
             </fieldset>
         </form>
@@ -100,6 +114,7 @@
                 <p>All rights reserved &reg; Nameofthesite 2017 </p>
             </div>
     </footer>
+    </div>
 </body>
 
 </html>
