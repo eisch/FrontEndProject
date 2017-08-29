@@ -27,6 +27,8 @@
                 <li class='menu'><a href="#aboutUs">About us</a></li>
                 <li class='menu'><a href="">Rooms</a></li>
                 <li class='menu'><a href="">Contact</a></li>
+                <li class='menu'><a href="#signUp" onclick="document.getElementById('signUp').style.display='block'">Sign up</a></li>
+                <li class='menu'><a href="" >Log in</a></li>
             </ul>
 
         </nav>
@@ -39,6 +41,46 @@
         </div>
     </header>
     <script src="assets/script/slideshow.js"></script>
+    <div id="signUp" class="window">
+        <span onclick="document.getElementById('signUp').style.display='none'" class="close" title="Close Modal">x</span>
+        
+        <form class="modal-content animate" action="">
+            <div class="signUpForm">
+                <h3>Sign up for more features!</h3>
+                <img src="assets/images/logo1png.png" alt="Hotelio's logo" id="signUpLogo">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your email" name="email" required>
+                <label for="firstName"> First name</label>
+                <input type="text" placeholder="First name" name="firstName" required>
+                <label for="lastName">Last name</label>
+                <input type="text" placeholder="Last name" name="lastName" required>
+                <label for="telNumber">Telephone number</label>
+                <input type="text" placeholder="Telephone number" name="telNumber" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password" required>
+                <label for="repeatedPassword">Repeat password</label>
+                <input type="password" placeholder="Repeat password" required>
+                <input type="checkbox" checked="checked"> Remember me
+                <p>By creating an account you agree to our <a href="#">Terms and Privacy</a></p>
+                <div class="clear">
+                    <button type="submit" class="signup">Sign up</button>
+                    <button type="button" onclick="document.getElementById('signUp').style.display='none'" class="cancel">Cancel</button>
+                   
+                </div>
+                
+             </div>
+        </form>
+    </div>
+    <script>
+            var modal = document.getElementById('signUp');
+            
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+    </script>
+            
     <aside>
         <form action='' method="post" id='reservation'>
             <fieldset>
@@ -126,7 +168,7 @@
             <input type="submit" value="Submit">
         </div>
         <div class="rights">
-                <p>All rights reserved &reg; Nameofthesite 2017 </p>
+                <p>All rights reserved &reg; Hotelio 2017 </p>
             </div>
     </footer>
     </div>
