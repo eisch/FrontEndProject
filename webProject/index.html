@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Make your reservation in Hotelio hotels here">
     <meta name="keywords" content="hotel, booking, relax, holiday, vacation, family">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Elena Nikolova, Elitsa Shishkova">
@@ -28,7 +28,7 @@
                 <li class='menu'><a href="">Rooms</a></li>
                 <li class='menu'><a href="">Contact</a></li>
                 <li class='menu'><a href="#signUp" onclick="document.getElementById('signUp').style.display='block'">Sign up</a></li>
-                <li class='menu'><a href="" >Log in</a></li>
+                <li class='menu'><a href="#login" onclick="document.getElementById('login').style.display='block'">Log in</a></li>
             </ul>
 
         </nav>
@@ -44,7 +44,7 @@
     <div id="signUp" class="window">
         <span onclick="document.getElementById('signUp').style.display='none'" class="close" title="Close Modal">x</span>
         
-        <form class="modal-content animate" action="">
+        <form class="modal-content" action="">
             <div class="signUpForm">
                 <h3>Sign up for more features!</h3>
                 <img src="assets/images/logo1png.png" alt="Hotelio's logo" id="signUpLogo">
@@ -67,20 +67,42 @@
                     <button type="button" onclick="document.getElementById('signUp').style.display='none'" class="cancel">Cancel</button>
                    
                 </div>
-                
              </div>
         </form>
     </div>
+    <!-- TODO: new javascript-->
+    
+    <div id="login" class="window">
+        <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">x</span>
+        <form class="modal-content" action="">
+            <div class="logInForm">
+                <h3>Log in for more features!</h3>
+                <label>Email</label>
+                <input type="email" placeholder="Enter email" name="email" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" name="password" required>
+                <input type="checkbox" checked="checked">Remember me
+                <div class="clear">
+                    <button type="submit" class="login">Login</button>
+                    <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancel">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password </a> </span>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <script>
             var modal = document.getElementById('signUp');
-            
+            var modal2 = document.getElementById('login');
             window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
+            if (event.target == modal) {
+                        modal.style.display = "none";
+            }
+            if(event.target == modal2){
+                        modal2.style.display = "none";
+            }
             }
     </script>
-            
     <aside>
         <form action='' method="post" id='reservation'>
             <fieldset>

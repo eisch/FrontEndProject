@@ -225,7 +225,7 @@ display: inline;
     width: 50%;
 }
 /*sign up form*/
-.signup, .cancel{
+.signup, .cancel, .login{
     background-color: #0055BD;
     color: white;
     cursor: pointer;
@@ -236,14 +236,13 @@ display: inline;
     border-radius: 5px;
     border: none;
 }
-.signUpForm{
+.signUpForm, .logInForm{
     padding: 10px;
 }
 .window{
     display: none;
     position: fixed;
     overflow: auto;
-    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -254,7 +253,7 @@ display: inline;
 #signUpLogo{
     float: right;
 }
-#signUp h3{
+#signUp h3, #login h3{
     text-align: center;
 }
 .modal-content{
@@ -282,8 +281,4 @@ display: inline;
     clear: both;
     display: table;
 }
-@media screen and (max-width: 300px){
-    .cancel, .signup{
-        width: 100%;
-    }
-}
+
