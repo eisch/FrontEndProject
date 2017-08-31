@@ -51,6 +51,7 @@ table {
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+/*menu*/
 #logo{
     height: 150px;
     float:left;
@@ -68,6 +69,7 @@ body{
    width: 8%;
    top:40px;
    left:550px;
+
  
 }
 .menu a{
@@ -80,6 +82,7 @@ body{
     text-decoration: none;
    text-shadow:5px 5px 10px blue;
 }
+/*slideshow*/
 .slide{
     width: 100%;
     height: 100%;
@@ -87,6 +90,7 @@ body{
     position:relative;
     top: -65px;
 }
+/*reservation form*/
 #reservation label{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
@@ -133,37 +137,83 @@ input[type='number']{
 #reserve:hover{
     background-color: #00aef0;
 }
-footer{
+/*sign up form*/
+.signup, .cancel, .login{
     background-color: #0055BD;
-    overflow: hidden;
-   
-}
-.socialIcons{
-    float: left;
-    margin-top: 17px;
-    margin-left: 50px;
-}
-footer p{
     color: white;
-}
-.fa.fa-facebook-official, .fa.fa-twitter, .fa.fa-instagram, .fa.fa-skype,.fa.fa-google-plus{
-    font-size:30px;
-    color: white;
-}
-.fa.fa-facebook-official:hover, .fa.fa-twitter:hover, .fa.fa-instagram:hover, .fa.fa-skype:hover,.fa.fa-google-plus:hover{
     cursor: pointer;
-    color: black;
+    width: 50%;
+    float: left;
+    margin: 10px 0px;
+    padding: 15px ;
+    border-radius: 5px;
+    border: none;
 }
-.subscribe
-{
+.signUpForm, .logInForm{
+    padding: 10px;
+}
+.window{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 10px;
+    z-index: 1;
+}
+#signUpLogo{
     float: right;
-    margin-right: 50px;
-    margin-top:17px;
 }
-.rights{
+#signUp h3, #login h3{
     text-align: center;
-    margin-top: 90px;
 }
+.modal-content{
+    background-color: white;
+    width: 70%;
+    border: 1px solid blue;
+    margin: 0% auto 15% auto;
+    
+}
+.close{
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    top:15px;
+    right: 35px;
+    font-weight: bold;
+
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*about us section*/
+
+#aboutUs{
+    overflow: hidden;
+    padding:10px;
+    border: 10px;
+    border-top-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+}
+
+.text{
+    float: left;
+    width: 50%;
+}
+#aui{
+    margin-top: 70px;
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+/*contact us section*/
 input[type=submit]{
     background-color: #0055BD;
     color:white;
@@ -204,81 +254,36 @@ display: inline;
     font-size:30px;
     color: #0055BD;
 }
-
-#aboutUs{
-    overflow: hidden;
-    padding:10px;
-    border: 10px;
-    border-top-style: solid;
-    border-color: lightgray;
-    border-width: 1px;
-}
-
-.text{
-    float: left;
-    width: 50%;
-}
-#aui{
-    margin-top: 70px;
-    display: inline-block;
-    float: right;
-    width: 50%;
-}
-/*sign up form*/
-.signup, .cancel, .login{
+/*footer*/
+footer{
     background-color: #0055BD;
-    color: white;
-    cursor: pointer;
-    width: 50%;
+    overflow: hidden;
+   
+}
+.socialIcons{
     float: left;
-    margin: 10px 0px;
-    padding: 15px ;
-    border-radius: 5px;
-    border: none;
+    margin-top: 17px;
+    margin-left: 50px;
 }
-.signUpForm, .logInForm{
-    padding: 10px;
+footer p{
+    color: white;
 }
-.window{
-    display: none;
-    position: fixed;
-    overflow: auto;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    padding-top: 50px;
+.fa.fa-facebook-official, .fa.fa-twitter, .fa.fa-instagram, .fa.fa-skype,.fa.fa-google-plus{
+    font-size:30px;
+    color: white;
 }
-#signUpLogo{
-    float: right;
-}
-#signUp h3, #login h3{
-    text-align: center;
-}
-.modal-content{
-    background-color: white;
-    margin: 5% auto 15% auto;
-    width: 70%;
-    border: 1px solid blue;
-
-}
-.close{
-    position: absolute;
-    color: black;
-    font-size: 40px;
-    top:15px;
-    right: 35px;
-    font-weight: bold;
-
-}
-.close:hover{
+.fa.fa-facebook-official:hover, .fa.fa-twitter:hover, .fa.fa-instagram:hover, .fa.fa-skype:hover,.fa.fa-google-plus:hover{
     cursor: pointer;
-    color: red;
+    color: black;
 }
-.clear::after{
-    content: "";
-    clear: both;
-    display: table;
+.subscribe
+{
+    float: right;
+    margin-right: 50px;
+    margin-top:17px;
+}
+.rights{
+    text-align: center;
+    margin-top: 90px;
 }
 
