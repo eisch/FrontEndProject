@@ -52,9 +52,9 @@ function receiveValue(){
 
     return result;
 }
-function draw(func){
+function draw(func, event){
     var d=func();
     console.log(d);
-     event.preventDefault();
+    event.preventDefault();    
     document.getElementById('hot').innerHTML=d;
 }
