@@ -25,7 +25,7 @@
             <ul>
                 <li class='menu'><a href="#wrapper">Home</a></li>
                 <li class='menu'><a href="#aboutUs">About us</a></li>
-                <li class='menu'><a href="#hotels">Hotels</a></li>
+                <li class='menu'><a href="#asidereservation">Hotels</a></li>
                 <li class='menu'><a href="#info">Contact</a></li>
                 <li class='menu'><a href="#signUp" onclick="document.getElementById('signUp').style.display='block'">Sign up</a></li>
                 <li class='menu'><a href="#login" onclick="document.getElementById('login').style.display='block'">Log in</a></li>
@@ -38,6 +38,9 @@
             <img src="assets/images/img2.jpg" alt="hotel view" class='slide'>
             <img src="assets/images/img3.jpg" alt="hotel view" class='slide'>
             <img src="assets/images/img4.jpg" alt="hotel view" class='slide'>
+
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </header>
     <script src="assets/script/slideshow.js"></script>
@@ -95,8 +98,8 @@
         <form action='' method="post" id='reservation'>
             <fieldset id='slojiFon'>
                 <legend>Reservation form</legend>
-                <label for="city" >City</label>
-                <input type="text" placeholder="City" name='city'>
+               <input type="search" id='search' name='search' >  
+               
                 <label for="check-in" >Check in</label>
                 <input type="date" name="check-in" id="check-in">
                 <label for="check-out">Check out</label>
@@ -129,13 +132,13 @@
                   </select>
                   </div>
                  
-                  <div id='reserve' onclick="show()">Reserve</div>
+                  <button for="search" onclick="draw(receiveValue)">Search</button>
 
             </fieldset>
         </form>
     </aside>
     <main>
-         <section id='hotels'>
+         <section id='hot'>
             <script src='assets/script/rooms.js'></script>
         </section> 
     </main>

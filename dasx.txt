@@ -1,0 +1,31 @@
+ var searched = document.getElementById('search').value;
+    var result = "";
+    event.preventDefault();
+    console.log(searched);
+    if (searched == "") {
+        event.preventDefault();
+        result += '<ol style="list-style-type:none">';
+        this.hotel.forEach(function (element) {
+            result += '<li style="background-color:#f4f4f4; border:1px solid grey"><article style="box-sizing:border-box; padding:5px;"><img src="' + element.url + '"alt="Image of the hotel" width="200px" style="float:left;"/><div style=" margin-left: 222px;"><h3>' + element.hotelname + '</h3><span>' + element.city + '</span><p>Distance to City center ' + element.distToCityCenter + ' km</p><p>Distance to the beach ' + element.distToSea + ' km</p></div></article></li><br/>';
+        }, this);
+        result += '</ol>';
+        document.getElementById('hotels').innerHTML = result;
+    } else {
+        event.preventDefault();
+        var res = "";
+        console.log('frsdy')
+        var searchedItems = this.hotel.filter(function (x) {
+            return x.hotelname.indexOf(searched) != -1 || x.city.indexOf(searched) != -1;
+        }, this);
+        console.log(searchedItems);
+        res += '<ol style="list-style-type:none">';
+        searchedItems.forEach(function (x) {
+            res += '<li style="background-color:#f4f4f4; border:1px solid grey"><article style="box-sizing:border-box; padding:5px;"><img src="' + element.url + '"alt="Image of the hotel" width="200px" style="float:left;"/><div style=" margin-left: 222px;"><h3>' + element.hotelname + '</h3><span>' + element.city + '</span><p>Distance to City center ' + element.distToCityCenter + ' km</p><p>Distance to the beach ' + element.distToSea + ' km</p></div></article></li><br/>';
+
+        })
+        console.log(res);
+        res += '</ol>';
+        document.getElementById('hotels').innerHTML = res;
+    }
+    
+}
