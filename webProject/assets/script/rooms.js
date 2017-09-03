@@ -14,16 +14,16 @@ HotelRoom.prototype.showInfo=function(){
     return result;
 }
 var hotels=[
-    new HotelRoom('Philoxenia','Pefkochori ,Greece',0.4,0.6,['WiFi','Pool','Air conditioner','Pets','SPA','TV',"Parking",'Restaurant','Fitness'],125,'151.jpeg'),
-    new HotelRoom('Imperial Palace','Solun, Greece',0.7,0.2,['WiFi','Pool','Air conditioner','TV',"Parking",'Restaurant','Fitness'],186,'164.jpeg'),
-    new HotelRoom('Sentido Ixian','Rhodes Island, Greece',0.3,0.6,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness',"Spa"],435,'174.jpeg'),
-    new HotelRoom('President','Atina,Greece',0.8,0.2,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness'],324,'188.jpeg'),
-    new HotelRoom('The George','Mikonos,Greece',0.1,0.7,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness','Spa'],586,'200.jpeg'),
-    new HotelRoom('Marina Hotel','Kushadasa,Turkey',0.3,1.0,['WiFi','Pool','Air conditioner','SPA','TV',"Parking",'Restaurant'],225,'206.jpeg'),
-    new HotelRoom('Ayvalik Cinar','Ayvalik, Turkey',0.7,0.2,['WiFi','Pool','Air conditioner','TV','Restaurant'],95,'212.jpeg'),
-    new HotelRoom('Royal Palace','Kushadasa,Turkey',0.4,2.8,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness',"Spa"],335,'213.jpeg'),
-    new HotelRoom('President','Atina,Greece',0.8,0.2,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness'],324,'188.jpeg'),
-    new HotelRoom('The George','Kushadasa,Turkey',0.1,0.7,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness','Spa'],586,'200.jpeg'),
+    new HotelRoom('Philoxenia','Pefkochori ,Greece',0.4,0.6,['WiFi','Pool','Air conditioner','Pets','SPA','TV',"Parking",'Restaurant','Fitness'],125,'assets/images/151.jpeg'),
+    new HotelRoom('Imperial Palace','Solun, Greece',0.7,0.2,['WiFi','Pool','Air conditioner','TV',"Parking",'Restaurant','Fitness'],186,'assets/images/164.jpeg'),
+    new HotelRoom('Sentido Ixian','Rhodes Island, Greece',0.3,0.6,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness',"Spa"],435,'assets/images/174.jpeg'),
+    new HotelRoom('President','Atina,Greece',0.8,0.2,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness'],324,'assets/images/188.jpeg'),
+    new HotelRoom('The George','Mikonos,Greece',0.1,0.7,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness','Spa'],586,'assets/images/200.jpeg'),
+    new HotelRoom('Marina Hotel','Kushadasa,Turkey',0.3,1.0,['WiFi','Pool','Air conditioner','SPA','TV',"Parking",'Restaurant'],225,'assets/images/206.jpeg'),
+    new HotelRoom('Ayvalik Cinar','Ayvalik, Turkey',0.7,0.2,['WiFi','Pool','Air conditioner','TV','Restaurant'],95,'assets/images/212.jpeg'),
+    new HotelRoom('Royal Palace','Kushadasa,Turkey',0.4,2.8,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness',"Spa"],335,'assets/images/213.jpeg'),
+    new HotelRoom('President','Atina,Greece',0.8,0.2,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness'],324,'assets/images/188.jpeg'),
+    new HotelRoom('The George','Kushadasa,Turkey',0.1,0.7,['WiFi','Pool','Air conditioner','Pets','TV',"Parking",'Restaurant','Fitness','Spa'],586,'assets/images/200.jpeg'),
 ];
 
 function Hotels(hotel){
@@ -33,7 +33,7 @@ Hotels.prototype.show=function(){
    
     var result='<ol style="list-style-type:none">';
     this.hotel.forEach(function(element) {
-        result+='<li style=""><article><img src='+element.url+'alt="Image of the hotel"/><h3>'+element.hotelname+'</h3><span>'+element.city+'</span><p>Distance to City center '+element.distToCityCenter+' km</p><p>Distance to the beach '+element.distToSea+' km</p></article></li>';
+        result+='<li style="background-color:#f4f4f4; border:1px solid grey"><article style="box-sizing:border-box; padding:5px;"><img src="'+element.url+'"alt="Image of the hotel" width="200px" style="float:left;"/><div style=" margin-left: 222px;"><h3>'+element.hotelname+'</h3><span>'+element.city+'</span><p>Distance to City center '+element.distToCityCenter+' km</p><p>Distance to the beach '+element.distToSea+' km</p></div></article></li><br/>';
     }, this);
     result+='</ol>';
 
