@@ -261,6 +261,33 @@ button[for='search']{
     clear: both;
     display: table;
 }
+/*advantages section*/
+table, tr, td{
+    border: 1px solid black;
+    text-align: right;
+    padding: 10px;
+}
+table tr:nth-child(even){
+    background-color: #e7f6fc;
+}
+#adv h1, #short{
+    text-align: center;
+    
+}
+#adv button{
+margin: 0 auto;
+display: block;
+background-color: #0055BD;
+border: none;
+padding: 20px;
+border-radius: 5px;
+color: white;
+}
+.fa.fa-map-signs, .fa.fa-bed, .fa.fa-wheelchair, .fa.fa-cutlery, .fa.fa-glass,.fa.fa-credit-card,.fa.fa-heart,.fa.fa-group{
+    font-size: 50px;
+    color: #0055BD;
+    float: left;
+}
 
 /*about us section*/
 
@@ -359,4 +386,11 @@ footer p{
     text-align: center;
     margin-top: 90px;
 }
-
+footer input[type=submit]{
+    background-color: white;
+    color:blue;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
